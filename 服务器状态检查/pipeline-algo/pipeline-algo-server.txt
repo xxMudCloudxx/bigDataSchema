@@ -1,0 +1,26 @@
+========== 服务器深度审计报告 V2.0: iZsf43us332zrtZ ==========
+时间: Fri Dec  5 12:41:51 AM CST 2025
+IP地址: 172.18.179.176 
+
+[1] 环境变量深度检查 (Environment)
+JAVA_HOME (Current): 
+CLASSPATH (Current): 
+JAVA_HOME (Detected): /usr/lib/jvm/java-8-openjdk-amd64/jre/ (自动探测)
+
+[2] 核心组件版本检查 (Version Check)
+Java 版本: 1.8.0_472
+Python3 版本: 3.10.12
+Kafka (Jar包推断): kafka_2.11-2.4.1.jar
+Zookeeper (Jar包推断): zookeeper-3.5.7.jar
+Flume 版本: Flume 1.9.0
+Flink 版本: Version: 1.13.6, Commit ID: b2ca390
+Docker: 未安装
+
+[3] Python 关键依赖版本 (Pip Freeze)
+未找到关键 Python 包
+
+[4] 核心端口监听复查
+tcp6       0      0 127.0.0.1:9092          :::*                    LISTEN      68505/java          
+tcp6       0      0 :::2181                 :::*                    LISTEN      68141/java          
+
+========== 审计 V2.0 结束 ==========

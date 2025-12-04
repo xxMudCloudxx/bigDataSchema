@@ -1,0 +1,30 @@
+========== 服务器深度审计报告 V2.0: iZbp140579b0uunbxve5tgZ ==========
+时间: Fri Dec  5 12:40:14 AM CST 2025
+IP地址: 172.24.214.148 172.17.0.1 
+
+[1] 环境变量深度检查 (Environment)
+JAVA_HOME (Current): 
+CLASSPATH (Current): 
+JAVA_HOME (Detected): /usr/lib/jvm/java-8-openjdk-amd64/jre/ (自动探测)
+
+[2] 核心组件版本检查 (Version Check)
+Java 版本: 1.8.0_472
+Python3 版本: 3.10.12
+Kafka/ZK 目录不存在 (/usr/local/kafka)
+MyCat (日志推断): 日志中未找到版本信息
+Docker MySQL 版本:
+mysql-n2: mysql:5.7
+mysql-n1: mysql:5.7
+
+[3] Python 关键依赖版本 (Pip Freeze)
+pyspark==4.0.1
+
+[4] 核心端口监听复查
+tcp        0      0 0.0.0.0:5000            0.0.0.0:*               LISTEN      26235/python        
+tcp        0      0 0.0.0.0:3306            0.0.0.0:*               LISTEN      24164/docker-proxy  
+tcp        0      0 0.0.0.0:3307            0.0.0.0:*               LISTEN      24417/docker-proxy  
+tcp6       0      0 :::8066                 :::*                    LISTEN      24608/java          
+tcp6       0      0 :::3306                 :::*                    LISTEN      24170/docker-proxy  
+tcp6       0      0 :::3307                 :::*                    LISTEN      24423/docker-proxy  
+
+========== 审计 V2.0 结束 ==========
